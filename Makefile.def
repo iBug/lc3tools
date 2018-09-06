@@ -67,7 +67,8 @@ clear: dist_lc3as_clear dist_lc3convert_clear dist_lc3sim_clear \
 	dist_lc3sim-tk_clear
 
 distclean: clean clear
-	${RM} -f Makefile
+	${RM} -f Makefile lc3as lc3convert lc3sim lc3sim-tk \
+    lc3os.obj lc3os.sym
 
 install: ALL
 	${MKDIR} -p ${INSTALL_DIR}
